@@ -3,6 +3,9 @@ import ProjectList from "@/components/Project";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Project() {
+    function handleClickNature(){
+
+    }
     return (
         <Layout>
             {/* content our project */}

@@ -9,10 +9,17 @@ const ProjectList = () => {
     setFeatures(featuresData);
   }, []);
 
+  function handleClick(input){
+    setFeatures(featuresData)
+    setFeatures(features.filter((feature)=>feature.type===input))
+  }
+
   return (
     <section>
       <hr />
       <div className="row">
+        <button onClick={()=>handleClick("nature")}>nature</button>
+        <button onClick={()=>handleClick("moderen")}>moderen</button>
         {features.map((data, index) => {
           return (
             <div className="col-md-3" key={index}>
